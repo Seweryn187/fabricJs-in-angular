@@ -1,0 +1,17 @@
+<div class="canvas-container">
+  <canvas id="myCanvas"></canvas>
+  <input type="file" id="file" (change)="selectBackgroundFile($event)"  class="upload-image"/>
+  <button id="edit" (click)="edit()">Toggle editing</button>
+  <button id="freeDrawMode" (click)="select(DrawingTools.POLYGON)">Toggle free draw polygon mode</button>
+  <button id="selectMode" (click)="select(DrawingTools.SELECT)">Toggle select mode</button>
+<!--  <button id="deleteActive" (click)="select(DrawingTools.DELETE)">Delete active object</button>-->
+  <button id="deleteAll" (click)="select(DrawingTools.DELETE_ALL)">Delete all objects</button>
+  <button id="exportToJson" (click)="convertCanvasObjectsToJson()">Export to JSON</button>
+  <button id="readonlyMode" (click)="activateReadOnlyMod()">Read only mod</button>
+
+</div>
+
+<div class="json-container">
+  <label for="toJson" >Canvas objects to JSON:</label>
+  <textarea [readOnly]="true" name="To Json" id="toJson">{{canvasToJson}}</textarea>
+</div>

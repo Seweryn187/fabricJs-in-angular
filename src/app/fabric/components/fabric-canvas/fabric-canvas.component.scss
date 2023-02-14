@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.json-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#myCanvas {
+  border: 2px solid black;
+}
+
+.upload-image {
+  margin-top: 10px;
+}
+
+#toJson {
+  margin-top: 15px;
+  width: 1280px;
+  height: 200px;
+}

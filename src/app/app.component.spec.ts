@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'briteoffice-test2'`, () => {
+  it(`should have as title 'fabricJs-in-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('briteoffice-test2');
+    expect(app.title).toEqual('fabricJs-in-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('briteoffice-test2 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('fabricJs-in-angular app is running!');
   });
 });
